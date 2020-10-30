@@ -75,42 +75,42 @@ class _HomeScreenState extends State<HomeScreen> {
             DestinationCarousel(),
             SizedBox(height: 20.0),
             HotelCarousel(),
-            BottomNavigationBar(
-              type: BottomNavigationBarType.fixed,
-              selectedItemColor: Colors.brown,
-              unselectedItemColor: Colors.grey,
-              currentIndex: _currentIndex,
-              onTap: (int value) {
-                setState(() {
-                  _currentIndex = value;
-                });
-              },
-              items: <BottomNavigationBarItem>[
-                BottomNavigationBarItem(
-                  title: SizedBox.shrink(),
-                  icon: Icon(
-                    Icons.account_circle,
-                    size: 30.0,
-                  ),
-                ),
-                BottomNavigationBarItem(
-                  title: SizedBox.shrink(),
-                  icon: Icon(
-                    Icons.account_circle,
-                    size: 30.0,
-                  ),
-                ),
-                BottomNavigationBarItem(
-                  title: SizedBox.shrink(),
-                  icon: Icon(
-                    Icons.account_circle,
-                    size: 30.0,
-                  ),
-                ),
-              ],
-            ),
           ],
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        selectedItemColor: Colors.brown,
+        unselectedItemColor: Colors.grey,
+        currentIndex: _currentIndex,
+        onTap: (int value) {
+          setState(() {
+            _currentIndex = value;
+          });
+        },
+        items: <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            title: SizedBox.shrink(),
+            icon: Icon(
+              Icons.account_circle,
+              size: 30.0,
+            ),
+          ),
+          BottomNavigationBarItem(
+            title: SizedBox.shrink(),
+            icon: Icon(
+              Icons.account_circle,
+              size: 30.0,
+            ),
+          ),
+          BottomNavigationBarItem(
+            title: SizedBox.shrink(),
+            icon: Icon(
+              Icons.account_circle,
+              size: 30.0,
+            ),
+          ),
+        ],
       ),
     );
   }
