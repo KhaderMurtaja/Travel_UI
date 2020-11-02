@@ -4,6 +4,7 @@ import 'package:travel_ui/widgets/destination_carousel.dart';
 import 'package:travel_ui/widgets/hotel_carousel.dart';
 
 class HomeScreen extends StatefulWidget {
+  static const String id = 'home_screen';
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
@@ -80,7 +81,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
-        selectedItemColor: Colors.brown,
+        selectedItemColor: Colors.blue[700],
         unselectedItemColor: Colors.grey,
         currentIndex: _currentIndex,
         onTap: (int value) {
@@ -92,22 +93,22 @@ class _HomeScreenState extends State<HomeScreen> {
           BottomNavigationBarItem(
             title: SizedBox.shrink(),
             icon: Icon(
-              Icons.account_circle,
+              Icons.search,
               size: 30.0,
             ),
           ),
           BottomNavigationBarItem(
             title: SizedBox.shrink(),
             icon: Icon(
-              Icons.account_circle,
+              Icons.wifi,
               size: 30.0,
             ),
           ),
           BottomNavigationBarItem(
             title: SizedBox.shrink(),
-            icon: Icon(
-              Icons.account_circle,
-              size: 30.0,
+            icon: CircleAvatar(
+              backgroundImage: NetworkImage('http://i.imgur.com/zL4Krbz.jpg'),
+              radius: 15.5,
             ),
           ),
         ],
