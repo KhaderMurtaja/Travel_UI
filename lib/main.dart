@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:travel_ui/screens/destination_screen.dart';
-import 'package:travel_ui/screens/home_screen.dart';
+import 'package:Travel_UIs/screens/destination_screen.dart';
+import 'package:Travel_UIs/screens/home_screen.dart';
 
 void main() => runApp(MyApp());
 

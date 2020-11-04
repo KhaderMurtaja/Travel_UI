@@ -1,4 +1,4 @@
-import 'package:travel_ui/models/activity_model.dart';
+import 'package:Travel_UIs/models/activity_model.dart';
 
 class Destination {
   String imageUrl;
