@@ -91,6 +91,7 @@ class _HomeScreenState extends State<HomeScreen> {
         },
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
+            // ignore: deprecated_member_use
             title: SizedBox.shrink(),
             icon: Icon(
               Icons.search,
@@ -98,6 +99,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
           BottomNavigationBarItem(
+            // ignore: deprecated_member_use
             title: SizedBox.shrink(),
             icon: Icon(
               Icons.wifi,
@@ -105,6 +107,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
           BottomNavigationBarItem(
+            // ignore: deprecated_member_use
             title: SizedBox.shrink(),
             icon: CircleAvatar(
               backgroundImage: NetworkImage('http://i.imgur.com/zL4Krbz.jpg'),

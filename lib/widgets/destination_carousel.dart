@@ -107,13 +107,16 @@ class DestinationCarousel extends StatelessWidget {
                         ),
                         child: Stack(
                           children: <Widget>[
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(20.0),
-                              child: Image(
-                                height: 180.0,
-                                width: 180.0,
-                                fit: BoxFit.cover,
-                                image: AssetImage(destination.imageUrl),
+                            Hero(
+                              tag: destination.imageUrl,
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(20.0),
+                                child: Image(
+                                  height: 180.0,
+                                  width: 180.0,
+                                  fit: BoxFit.cover,
+                                  image: AssetImage(destination.imageUrl),
+                                ),
                               ),
                             ),
                             Positioned(
@@ -123,7 +126,7 @@ class DestinationCarousel extends StatelessWidget {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                    destination.country,
+                                    destination.city,
                                     style: TextStyle(
                                       color: Colors.white,
                                       fontWeight: FontWeight.w600,
@@ -140,7 +143,7 @@ class DestinationCarousel extends StatelessWidget {
                                       ),
                                       SizedBox(width: 5.0),
                                       Text(
-                                        destination.city,
+                                        destination.country,
                                         style: TextStyle(
                                           color: Colors.white,
                                         ),
